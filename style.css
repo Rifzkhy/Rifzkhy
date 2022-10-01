@@ -93,10 +93,6 @@ content div{
     nav ul li a{
         font-size: 20px;
     }
-    a:hover,a.active{
-        background: none;
-        color: var(--abu-abu);
-    }
     #nav-check:checked ~ ul{
         left: 0;
     }
