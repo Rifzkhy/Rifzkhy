@@ -5,6 +5,7 @@
   list-style: none;
   box-sizing: border-box;
   font-family: "Poppins" , sans-serif;
+  transition: all 0.5s;
 }
 :root{
     --putih : #fff;
@@ -54,7 +55,6 @@ nav ul li a{
     padding: 7px 13px;
     border-radius: 3px;
     text-transform: uppercase;
-    transition: 0.5s;
 }
 .active,.nav-btn:hover{
     background-color: var(--abu-abu);
@@ -72,13 +72,14 @@ label.nav-checkbtn{
 }
 
 /*  Content  */
-content div{
+header div{
     margin: 20px;
     text-align: justify;
 }
 
 .sign{
-    padding: 10%;
+  height: 100vh;
+    padding: 20%;
     font-size: 100px;
     color: var(--putih);
     font-weight: bold;
@@ -267,6 +268,8 @@ content div{
 
 @media (max-width: 858px){
     .sign{
+        height: 50vh;
+        padding-top: 40%;
         font-size: 50px;
     }
     label.nav-checkbtn{
@@ -280,7 +283,6 @@ content div{
         top: 80px;
         left: -100%;
         text-align: center;
-        transition: all 0.5s;
     }
     nav ul li{
         display: block;
