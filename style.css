@@ -22,19 +22,46 @@
     --hijau : green;
     --abu-abu : grey;
     --abu-abu-1 : #182A38;
+
+    /*  Medieval Palette  */
+    --medieval-1 : #A86E63;
+    --medieval-2 : #C95140;
+    --medieval-3 : #AD3F26;
+    --medieval-4 : #D3230C;
+
+    --medieval-5 : #9F6422;
+    --medieval-6 : #D3B14D;
+    --medieval-7 : #D1B77A;
+    --medieval-8 : #D3BB8D;
+
+    --medieval-9 : #3D2C12;
+    --medieval-10 : #968664;
+    --medieval-11 : #CCBEA3;
+    --medieval-12 : #D3C8B4;
+
+    --medieval-13 : #28313A;
+    --medieval-14 : #334350;
+    --medieval-15 : #51626A;
+    --medieval-16 : #586671;
+
+    --medieval-17 : #04305D;
+    --medieval-18 : #053A70;
+    --medieval-19 : #04478B;
+    --medieval-20 : #0755A0;
 }
 body{
-    background-color: var(--abu-abu-1);
+    background-color: var(--medieval-13);
     color: var(--putih);
 }
 /*  Navbar  */
 nav{
-    background-color: var(--biru-3);
+  background-color: var(--medieval-8);
     height: 80px;
     width: 100%;
 }
 label.nav-logo{
-    color: var(--putih);
+    color: var(--medieval-1);
+    text-shadow: 2px 2px var(--medieval-9);
     font-size: 30px;
     line-height: 80px;
     padding: 0 30px;
@@ -48,20 +75,32 @@ nav ul li{
     display: inline-block;
     line-height: 80px;
     margin: 0 5px;
+    transition: all 0s;
 }
 nav ul li a{
     color: var(--putih);
-    font-size: 20px;
-    padding: 7px 13px;
-    border-radius: 3px;
+    padding: 5px 10px;
     text-transform: uppercase;
+    background-image: url('on.png');
+	  background-size: 100% 100%;
+    width: 100px;
+    height: 40px;
+    border: none;
 }
 .active,.nav-btn:hover{
-    background-color: var(--abu-abu);
+    background-image: url('off.png');
+}
+.nav-btn span{
+  position: relative;
+  top: -2px;
+}
+.active,nav ul li a:hover{
+  position: relative;
+  top: 1.5px;
 }
 label.nav-checkbtn{
     font-size: 30px;
-    color: var(--putih);
+    color: var(--medieval-9);
     float: right;
     margin: 25px;
     cursor: pointer;
